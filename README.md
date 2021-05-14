@@ -7,7 +7,7 @@ Anti-Alpha is an esoteric language designed to avoid the use of alphabetic chara
 
 # What does this interpeter do (when it's finally done?)
 
-The interpreter takes apart your commands, figures out what it needs to do based on that, and then it executes the code. This is as simple as it gets; most characters are one byte and can do more than one thing, but becuase of this parser, things must end in `/n`, `#` or `¦`. Why not the `|`? The `|` is either split left on right, or..., well, or.
+The interpreter takes apart your commands, figures out what it needs to do based on that, and then it executes the code. This is as simple as it gets; most characters are one byte and can do more than one thing, but becuase of this parser, things must end in `/n`, `#` or `¦`. Why not the `|`? The `|` is either split left on right or to import.
 
 # What are the intended updates?
 
