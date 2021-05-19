@@ -1,5 +1,8 @@
 `program = input()
 
+character_set = program.split("")
+
+characterlist = [" ", "!", "\"", "#"]
 
 
 
