@@ -1,9 +1,30 @@
-`program = input()
-
-character_set = program.split("")
-
-characterlist = [" ", "!", "\"", "#"]
-
+`program = input
+import sys
+characterset = program.split("")
+forbiddencharacters = [] #where all the alphabetics go
+for i in range(52):
+  if i // 26:
+    forbiddencharacters.append(chr(i + 71))
+  else:
+    forbiddencharacters.append(chr(i + 65))
+stringmode = listmode = setmode = tuplemode = conditionalmode = functionmode = commentmode = False
+characterlist1 = ["\n" ", "!", "\"", "#", "$", "%", "\'", "(", ")", "*", "+", ",", "-", ".", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ":", ";", "<", "=", ">", "?", "@", "[", "/", "]", "^", "_", "`", "{", "|", "}", "~"] #the legal characters
+# here's the string and the comment section
+for chr in characterset:
+  
+  if chr in forbiddencharacters and not stringmode and not commentmode:
+    print("Error: alphanumeric characters detected outside of a string or comment.")
+    sys.exit()
+  elif chr == "\"":
+    stringmode = not stringmode
+  elif chr == "#": 
+    commentmode = True
+  elif chr == "\n":
+    commentmode = False
+  else:
+    pass
+  if stringmode:
+    pass
 
 
 
