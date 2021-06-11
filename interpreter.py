@@ -13,22 +13,19 @@ characterlist1 = ["\n" ", "!", "\"", "#", "$", "%", "\'", "(", ")", "*", "+", ",
 # here's the string and the comment section
 currentstring1 = currentitem1 = currentstring2 = currenitem2 = ""
 index = 0
-for chr in cset:
-  if chr in forbiddencharacters and not stringmode and not commentmode:
-    print("Error: alphanumeric characters detected outside of a string or comment.")
-    sys.exit()
-  elif chr == "\"":
-    stringmode = not stringmode
-  elif chr == "#": 
-    commentmode = True
-  elif chr == "\n":
-    commentmode = False
-  else:
-    pass
-  if stringmode and currentstring1:
-    currentstring2 += chr
-  elif stringmode:
-    currentstring1 += chr
+def flagThis(code, characters, flags):
+  for chr in code:
+    if chr in characters:
+      index1 = characters.index(chr)
+      
+  
+
+def run(thisCode):  
+  for chr in cset:
+    if chr in forbiddencharacters and not stringmode and not commentmode:
+      print("Error: alphanumeric characters detected outside of a string or comment.")
+      sys.exit()
+   
   
     
 
