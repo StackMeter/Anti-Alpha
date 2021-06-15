@@ -1,4 +1,8 @@
-`program = input
+# some prep work
+import sys
+sys.setrecursionlimit(2147483647) # if you're exceeding this you're in an infinite loop
+l = len
+program = input()
 import sys
 cset = program.split("")
 cset2 = cset
@@ -8,11 +12,7 @@ for i in range(52):
     forbiddencharacters.append(chr(i + 71))
   else:
     forbiddencharacters.append(chr(i + 65))
-stringmode = listmode = setmode = tuplemode = conditionalmode = functionmode = commentmode = variablemode = numbermode = False
-characterlist1 = 
-"""
-¶ 
-"""
+
 # Things that will make my life easier
 def findThisList(item, li):
   return [i for i in range(len(li)) if li[i] == item]
@@ -33,22 +33,12 @@ def flagThis(code, characters, flags):
     for i2 in i1:
       code[i2] = [code[i2], flags[li.index(i1)]]
   return code
-
-   
-      
-  
-  for chr in code:
-    if chr in characters:
-      
-      
-  
-
 def run(thisCode):  
   for chr in thisCode:
     if chr in forbiddencharacters and not stringmode and not commentmode:
       print("Error: alphanumeric characters detected outside of a string or comment.")
       sys.exit()
-   
+
   
     
 
@@ -347,4 +337,4 @@ def run(thisCode):
 
 
 
-`
+
