@@ -13,3 +13,6 @@ The interpreter takes apart your commands, figures out what it needs to do based
 
 I hope to add access to libraries, such as math. I got my greasy fingers on the Unicode symbol set and there's like, >300 of them, so I might implement some two byters in future.
 
+# Current progress
+
+I'm working on several bracnhes at once, so it may be a bit confusing from here on out - check all the branches to see the progress.
