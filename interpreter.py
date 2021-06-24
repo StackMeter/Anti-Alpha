@@ -6,13 +6,6 @@ program = input()
 import sys
 cset = program.split("")
 cset2 = cset
-forbiddencharacters = [] #where all the alphabetics go
-for i in range(52):
-  if i // 26:
-    forbiddencharacters.append(chr(i + 71))
-  else:
-    forbiddencharacters.append(chr(i + 65))
-
 # Things that will make my life easier
 def findThisList(item, li):
   return [i for i in range(len(li)) if li[i] == item]
